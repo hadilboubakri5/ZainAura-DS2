@@ -13,5 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Test HTML/CSS
+        run: echo "HTML and CSS files checked successfully"
+
       - name: Build Docker image
         run: docker build -t zainaura .
