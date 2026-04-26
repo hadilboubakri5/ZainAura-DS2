@@ -17,4 +17,4 @@ jobs:
         run: echo "HTML and CSS files checked successfully"
 
       - name: Build Docker image
-        run: docker build -t erreur .
+        run: docker build -t zainaura .
