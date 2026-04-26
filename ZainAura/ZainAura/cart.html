@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon Panier – ZenAura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header sticky-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="accueil.html" class="logo">
+        <span class="logo-icon">ZA</span>
+        <span class="logo-text">ZenAura</span>
+      </a>
+
+      <nav class="nav">
+        <a href="boxes.html" class="nav-link">Mood Boxes</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="cart.html" class="header-icon cart-icon" title="Panier">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container cart-page">
+  <h1>🛒 Mon Panier</h1>
+
+  <ul id="cart-items"></ul>
+
+  <p class="cart-total">
+    Total : <span id="cart-total">0</span> TND
+  </p>
+
+  <button id="clear-cart" class="btn-clear-cart">Vider le panier</button>
+</main>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+const cartItems = document.getElementById('cart-items');
+const cartTotal = document.getElementById('cart-total');
+const clearCartBtn = document.getElementById('clear-cart');
+const cartCount = document.getElementById('cart-count');
+
+function renderCart(){
+  cartItems.innerHTML = '';
+  let total = 0;
+
+  if(cart.length === 0){
+    cartItems.innerHTML = '<li>Votre panier est vide 🛒</li>';
+  }
+
+  cart.forEach((item, index)=>{
+    const li = document.createElement('li');
+    li.innerHTML = `
+      ${item.name} - ${item.price} TND
+      <button class="remove-btn" data-index="${index}"><i class="fa-solid fa-trash"></i></button>
+    `;
+    cartItems.appendChild(li);
+    total += item.price;
+  });
+
+  cartTotal.textContent = total;
+  cartCount.textContent = cart.length;
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  document.querySelectorAll('.remove-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      cart.splice(btn.dataset.index, 1);
+      renderCart();
+    });
+  });
+}
+
+clearCartBtn.addEventListener('click', ()=>{
+  cart = [];
+  localStorage.removeItem('cart');
+  renderCart();
+});
+
+renderCart();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenAura – Emotional Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header-content">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">ZA</span>
+                    <span class="logo-text">ZenAura</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="boxes.html" class="nav-link">Mood Boxes</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="inscription.html" class="nav-link">Subscribe</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="inscription.html" class="btn-signup">Sign Up</a>
+                    <a href="login.html" class="btn-login">Log In</a>
+                </div>
+
+            </div>
+        </div>
+         </header>
+         <!-- Photos de présentation -->
+<div class="photo-wrapper">
+
+    <!-- Asma -->
+    <div class="profile-box">
+        <img src="asma.jpg" class="photo-small" alt="Asma Boumaiza">
+        <p class="photo-name">Asma Boumaiza</p>
+    </div>
+
+    <!-- Hadil -->
+    <div class="profile-box">
+        <img src="hadil.jpg" class="photo-small" alt="Hadil Boubakeri">
+        <p class="photo-name">Hadil Boubakeri</p>
+    </div>
+
+</div>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+
+                <span class="hero-badge">💗 ZenAura Mood Experience 💗</span>
+
+                <h1 class="hero-title">
+                    Choose Your Mood,<br>We Deliver the <span class="gradient-text">Vibe</span> 🎀
+                </h1>
+
+                <p class="hero-desc">
+                    Personalized mood boxes crafted to match your emotional energy.
+                    Relaxation, motivation, love, or focus — ZenAura is here for every mood.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToMoods()">Discover Boxes</button>
+                    <button class="btn btn-outline">Take Mood Quiz ✨</button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>1,200+</strong>
+                        <span>Happy Souls</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Zen Guarantee</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Premium</strong>
+                        <span>Hand Curated</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose">
+        <div class="container">
+
+            <h2 class="section-title">Why Choose ZenAura? 💝</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">💗</div>
+                    <h3>Curated with Love</h3>
+                    <p>Each box is crafted with emotional intention and meaningful items.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Wellness Journey</h3>
+                    <p>An experience that brings comfort, calm and clarity.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Perfect Gifts</h3>
+                    <p>Make someone smile with a unique emotional experience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Premium Quality</h3>
+                    <p>ZenAura items are ethically sourced and high quality.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- MOOD BOXES -->
+    <section class="mood-section" id="moods">
+        <div class="container">
+
+            <h2 class="section-title">Your 6 Mood Boxes 🎀</h2>
+            <p class="section-subtitle">Pick the vibe that resonates with you today.</p>
+
+            <div class="moods-grid" id="moodsGrid"></div>
+
+        </div>
+    </section>
+
+
+
+    <!-- SUBSCRIPTION SECTION -->
+    <section class="subscribe-section" id="subscribe">
+        <div class="container">
+
+            <h2 class="section-title white">Subscribe & Save 💗</h2>
+            <p class="section-subtitle white">Receive a new curated mood box every month.</p>
+
+            <div class="pricing-grid" id="pricingGrid"></div>
+
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3>ZenAura</h3>
+                    <p>Emotional wellness delivered.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#moods">Mood Boxes</a></li>
+                        <li><a href="#subscribe">Subscriptions</a></li>
+                        <li><a href="#">Gifts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+  <a href="https://www.instagram.com/lyralux_787" target="_blank" class="social-icon">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/21658797604" target="_blank" class="social-icon">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="https://wa.me/21622080734" target="_blank" class="social-icon">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+</div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p id="copyrightYear"></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

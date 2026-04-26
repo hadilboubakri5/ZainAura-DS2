@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZenAura – Mood Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header sticky-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="accueil.html" class="logo">
+        <span class="logo-icon">ZA</span>
+        <span class="logo-text">ZenAura</span>
+      </a>
+
+      <nav class="nav">
+        <a href="boxes.html" class="nav-link">Mood Boxes</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="inscription.html" class="nav-link">Subscribe</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="header-icon wish-icon" title="Liste de souhaits">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <!-- Panier -->
+        <a href="cart.html" class="header-icon cart-icon" title="Panier">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </a>
+        <!-- Auth -->
+        <a href="inscription.html" class="btn-signup">Sign Up</a>
+        <a href="login.html" class="btn-login">Log In</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="boxes-hero container">
+  <h1>Mood Boxes</h1>
+  <p>Choisissez une box pensée pour votre humeur — apaisante, joyeuse, concentrée ou réparatrice.</p>
+</section>
+
+<!-- MAIN -->
+<main class="boxes-wrapper container">
+
+  <!-- Calm Box -->
+  <section class="box-section" id="calm">
+    <div class="box-header">
+      <div class="box-title">
+        <h2>Calm Box</h2>
+        <p class="box-desc">Rituels doux pour se détendre et retrouver la présence.</p>
+      </div>
+      <div class="box-meta"><small class="muted">3 items</small></div>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-img"><img src="images/image1.jpg" alt="Bougie calmante"></div>
+        <div class="card-body">
+          <h3 class="card-title">Bougie Lavande</h3>
+          <p class="card-desc">Mélange lavande-chamomile, cire naturelle.</p>
+          <div class="card-footer">
+            <div class="price">59</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Bougie Lavande" data-price="59">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/image2.jpg" alt="Thé apaisant"></div>
+        <div class="card-body">
+          <h3 class="card-title">Thé Infusion</h3>
+          <p class="card-desc">Rooibos et mélisse pour un moment chaud et calme.</p>
+          <div class="card-footer">
+            <div class="price">39</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Thé Infusion" data-price="39">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/image3.jpg" alt="Masque de sommeil"></div>
+        <div class="card-body">
+          <h3 class="card-title">Masque en Soie</h3>
+          <p class="card-desc">Masque doux pour favoriser un sommeil réparateur.</p>
+          <div class="card-footer">
+            <div class="price">49</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Masque en Soie" data-price="49">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Joy Box -->
+  <section class="box-section" id="joy">
+    <div class="box-header">
+      <div class="box-title">
+        <h2>Joy Box</h2>
+        <p class="box-desc">Objets lumineux pour cultiver la joie et la gratitude.</p>
+      </div>
+      <div class="box-meta"><small class="muted">3 items</small></div>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-img"><img src="images/image4.jpg" alt="Brume d'ambiance"></div>
+        <div class="card-body">
+          <h3 class="card-title">Brume Agrumes</h3>
+          <p class="card-desc">Bergamote et orange pour un coup de pep's.</p>
+          <div class="card-footer">
+            <div class="price">45</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Brume Agrumes" data-price="45">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/image5.jpg" alt="Journal de gratitude"></div>
+        <div class="card-body">
+          <h3 class="card-title">Journal Gratitude</h3>
+          <p class="card-desc">Pages guidées pour noter les petits bonheurs.</p>
+          <div class="card-footer">
+            <div class="price">52</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Journal Gratitude" data-price="52">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/image6.jpg" alt="Thé floral"></div>
+        <div class="card-body">
+          <h3 class="card-title">Thé Floral</h3>
+          <p class="card-desc">Infusion légère à savourer en pleine conscience.</p>
+          <div class="card-footer">
+            <div class="price">33</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Thé Floral" data-price="33">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Focus Box -->
+  <section class="box-section" id="focus">
+    <div class="box-header">
+      <div class="box-title">
+        <h2>Focus Box</h2>
+        <p class="box-desc">Outils pour soutenir la concentration et le flow.</p>
+      </div>
+      <div class="box-meta"><small class="muted">3 items</small></div>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-img"><img src="images/img7.jpeg" alt="Roll-on focus"></div>
+        <div class="card-body">
+          <h3 class="card-title">Roll-on Focus</h3>
+          <p class="card-desc">Mélange menthe/romarin pour clarifier l'esprit.</p>
+          <div class="card-footer">
+            <div class="price">42</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Roll-on Focus" data-price="42">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/img8.jpeg" alt="Minuteur pomodoro"></div>
+        <div class="card-body">
+          <h3 class="card-title">Minuteur Pomodoro</h3>
+          <p class="card-desc">Structurer sessions et pauses pour rester productif.</p>
+          <div class="card-footer">
+            <div class="price">65</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Minuteur Pomodoro" data-price="65">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/img9.jpeg" alt="Notes autocollantes"></div>
+        <div class="card-body">
+          <h3 class="card-title">Set Notes</h3>
+          <p class="card-desc">Notes colorées pour capturer idées et tâches.</p>
+          <div class="card-footer">
+            <div class="price">29</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Set Notes" data-price="29">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Healing Box -->
+  <section class="box-section" id="healing">
+    <div class="box-header">
+      <div class="box-title">
+        <h2>Healing Box</h2>
+        <p class="box-desc">Supports doux pour la réparation et l'auto-compassion.</p>
+      </div>
+      <div class="box-meta"><small class="muted">3 items</small></div>
+    </div>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-img"><img src="images/image10.jpeg" alt="Baume apaisant"></div>
+        <div class="card-body">
+          <h3 class="card-title">Baume Apaisant</h3>
+          <p class="card-desc">Baume nourrissant pour points de tension.</p>
+          <div class="card-footer">
+            <div class="price">36</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Baume Apaisant" data-price="36">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/im12.jpg" alt="Patch aromatique"></div>
+        <div class="card-body">
+          <h3 class="card-title">Patch Confort</h3>
+          <p class="card-desc">Patch discret pour apaiser en déplacement.</p>
+          <div class="card-footer">
+            <div class="price">23</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Patch Confort" data-price="23">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="images/im13.jpeg" alt="Cartes d'affirmation"></div>
+        <div class="card-body">
+          <h3 class="card-title">Cartes Affirmation</h3>
+          <p class="card-desc">Prompts quotidiens pour la bienveillance envers soi.</p>
+          <div class="card-footer">
+            <div class="price">39</div>
+            <div class="actions">
+              <button class="btn-order" data-name="Cartes Affirmation" data-price="39">Commander</button>
+              <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p id="copyrightYear"></p>
+  </div>
+</footer>
+
+<script>
+// Wishlist toggle
+document.querySelectorAll('.wish-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    btn.classList.toggle('active');
+    const icon = btn.querySelector('i');
+    icon.classList.toggle('fa-solid');
+    icon.classList.toggle('fa-regular');
+  });
+});
+
+// Panier
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartCount = document.getElementById('cart-count');
+
+function updateCartCount(){
+  cartCount.textContent = cart.length;
+}
+updateCartCount();
+
+document.querySelectorAll('.btn-order').forEach(btn => {
+  btn.addEventListener('click', ()=>{
+    const name = btn.dataset.name;
+    const price = parseInt(btn.dataset.price);
+    cart.push({name, price});
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+    btn.textContent = 'Ajouté ✔';
+    btn.disabled = true;
+  });
+});
+
+// Copyright
+document.getElementById('copyrightYear').textContent =
+  '© ' + new Date().getFullYear() + ' ZenAura. All rights reserved.';
+</script>
+
+</body>
+</html>
